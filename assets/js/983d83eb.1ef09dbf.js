@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[9376],{81072:e=>{e.exports=JSON.parse('{"title":"Values","slug":"/category/values","permalink":"/category/values","navigation":{"previous":{"title":"Types","permalink":"/onchain/Types"},"next":{"title":"Simple values","permalink":"/onchain/Values/Simple Values"}}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[358],{38264:t=>{t.exports=JSON.parse('{"title":"Structs","slug":"/category/structs","permalink":"/category/structs","navigation":{"previous":{"title":"Aliases","permalink":"/onchain/Values/aliases"},"next":{"title":"Struct definition","permalink":"/onchain/Values/Structs/definition"}}}')}}]);

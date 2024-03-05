@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[7320],{72496:e=>{e.exports=JSON.parse('{"title":"utilities","slug":"/category/utilities","permalink":"/category/utilities","navigation":{"previous":{"title":"PTokenName","permalink":"/onchain/API/types/PTokenName"},"next":{"title":"compile","permalink":"/onchain/API/utilities/compile"}}}')}}]);

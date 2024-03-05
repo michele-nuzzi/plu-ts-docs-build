@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[3452],{68648:e=>{e.exports=JSON.parse('{"title":"types","slug":"/category/types","permalink":"/category/types","navigation":{"previous":{"title":"API","permalink":"/category/api"},"next":{"title":"PScriptContex","permalink":"/onchain/API/types/PScriptContex"}}}')}}]);

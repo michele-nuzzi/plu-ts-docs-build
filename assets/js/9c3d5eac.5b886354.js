@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[7036],{14096:e=>{e.exports=JSON.parse('{"title":"stdlib","slug":"/category/stdlib","permalink":"/category/stdlib","navigation":{"previous":{"title":"pforce and pdelay","permalink":"/onchain/Optimizations/pforce and pdelay"},"next":{"title":"TermInt","permalink":"/onchain/stdlib/TermInt"}}}')}}]);

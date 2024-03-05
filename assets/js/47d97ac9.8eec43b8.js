@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[9428],{4588:e=>{e.exports=JSON.parse('{"title":"Onchain","slug":"/category/onchain","permalink":"/category/onchain","navigation":{"previous":{"title":"Vesting","permalink":"/examples/Vesting"},"next":{"title":"Concepts","permalink":"/onchain/Concepts"}}}')}}]);

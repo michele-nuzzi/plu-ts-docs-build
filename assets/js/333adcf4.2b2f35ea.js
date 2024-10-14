@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplu_ts_docs=self.webpackChunkplu_ts_docs||[]).push([[79646],{56832:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"V1","slug":"/category/v1","permalink":"/category/v1","sidebar":"tutorialSidebar","navigation":{"previous":{"title":"types","permalink":"/category/types"},"next":{"title":"Address","permalink":"/category/address"}}}}')}}]);

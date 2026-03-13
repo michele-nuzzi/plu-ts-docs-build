@@ -1,6 +1,6 @@
 /*!-----------------------------------------------------------------------------
  * Copyright (c) Microsoft Corporation. All rights reserved.
- * Version: 0.1.0-dev1(5f53c74686d6eed60f9d2fcfdf2a6ad35b446fcf)
+ * Version: 0.1.0-dev3(5f53c74686d6eed60f9d2fcfdf2a6ad35b446fcf)
  * Released under the MIT license
  * https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
  *-----------------------------------------------------------------------------*/
@@ -16,8 +16,7 @@ var moduleExports = (() => {
   var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
     get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
   }) : x)(function(x) {
-    if (typeof require !== "undefined")
-      return require.apply(this, arguments);
+    if (typeof require !== "undefined") return require.apply(this, arguments);
     throw Error('Dynamic require of "' + x + '" is not supported');
   });
   var __commonJS = (cb, mod) => function __require2() {
@@ -2148,6 +2147,7 @@ var moduleExports = (() => {
         return token = 14;
       }
       switch (code) {
+        // tokens: []{}:,
         case 123:
           pos++;
           return token = 1;
@@ -2166,10 +2166,12 @@ var moduleExports = (() => {
         case 44:
           pos++;
           return token = 5;
+        // strings
         case 34:
           pos++;
           value = scanString();
           return token = 10;
+        // comments
         case 47:
           const start = pos - 1;
           if (text.charCodeAt(pos + 1) === 47) {
@@ -2213,12 +2215,16 @@ var moduleExports = (() => {
           value += String.fromCharCode(code);
           pos++;
           return token = 16;
+        // numbers
         case 45:
           value += String.fromCharCode(code);
           pos++;
           if (pos === len || !isDigit(text.charCodeAt(pos))) {
             return token = 16;
           }
+        // found a minus, followed by a number so
+        // we fall through to proceed with scanning
+        // numbers
         case 48:
         case 49:
         case 50:
@@ -2231,6 +2237,7 @@ var moduleExports = (() => {
         case 57:
           value += scanNumber();
           return token = 11;
+        // literals and unknown symbols
         default:
           while (pos < len && isUnknownContentCharacter(code)) {
             pos++;

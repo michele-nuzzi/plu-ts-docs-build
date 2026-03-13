@@ -1,6 +1,6 @@
 /*!-----------------------------------------------------------------------------
  * Copyright (c) Microsoft Corporation. All rights reserved.
- * Version: 0.1.0-dev1(5f53c74686d6eed60f9d2fcfdf2a6ad35b446fcf)
+ * Version: 0.1.0-dev3(5f53c74686d6eed60f9d2fcfdf2a6ad35b446fcf)
  * Released under the MIT license
  * https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
  *-----------------------------------------------------------------------------*/
@@ -16,8 +16,7 @@ var moduleExports = (() => {
   var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
     get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
   }) : x)(function(x) {
-    if (typeof require !== "undefined")
-      return require.apply(this, arguments);
+    if (typeof require !== "undefined") return require.apply(this, arguments);
     throw Error('Dynamic require of "' + x + '" is not supported');
   });
   var __commonJS = (cb, mod) => function __require2() {
@@ -664,8 +663,7 @@ ${tagToString(tag)}`;
     if (tag.name === "param" && tag.text) {
       const [paramName, ...rest] = tag.text;
       tagLabel += `\`${paramName.text}\``;
-      if (rest.length > 0)
-        tagLabel += ` \u2014 ${rest.map((r) => r.text).join(" ")}`;
+      if (rest.length > 0) tagLabel += ` \u2014 ${rest.map((r) => r.text).join(" ")}`;
     } else if (Array.isArray(tag.text)) {
       tagLabel += ` \u2014 ${tag.text.map((r) => r.text).join(" ")}`;
     } else if (tag.text) {

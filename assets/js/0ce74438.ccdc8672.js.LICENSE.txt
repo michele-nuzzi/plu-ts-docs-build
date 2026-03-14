@@ -1,0 +1,14 @@
+/**
+ * @fileoverview Common constants used by various parts of the compiler.
+ * @license Apache-2.0
+ */
+
+/**
+ * @fileoverview Terminal utility.
+ * @license Apache-2.0
+ */
+
+/**
+ * @fileoverview Various character and text utility.
+ * @license Apache-2.0
+ */
